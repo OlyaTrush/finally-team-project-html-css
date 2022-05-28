@@ -1,0 +1,26 @@
+$desktop-body-color: #fffff9;
+$primary-text-color: #2e2520;
+$body-white-color: #ffffff;
+$accent-color: #876655;
+$menu-background-color: rgba(254, 243, 228, 0.9);
+$button-text-color: #ffffff;
+$button-color: #ab816c;
+$read-more-color: #ab816c;
+$rating-star-color: #ab816c;
+$slider-number-color: #ab816c;
+$grid-text-color: #000000;
+$grid-color: #fef3e4;
+$grid-icon-color: #674d40;
+$placeholder-color: rgba(171, 129, 108, 0.5);
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  background-color: $body-white-color;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1280px) {
+    background-color: $desktop-body-color;
+  }
+}

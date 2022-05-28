@@ -1,0 +1,89 @@
+.top-common-background {
+  background-image: url(/src/images/top-common-bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 320px;
+  height: 460px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url(/src/images/top-common-bg-mob@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 622px;
+    background-image: url(/src/images/top-common-bg-tablet.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/src/images/top-common-bg-tablet@2x.png);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    height: 1036px;
+    background-image: url(/src/images/top-common-bg-desktop.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/src/images/top-common-bg-desktop@2x.png);
+      }
+    }
+  }
+}
+
+.bottom-common-background {
+  background-image: url(/src/images/bottom-common-bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 320px;
+  height: 1337px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url(/src/images/bottom-common-bg-mob@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 1519px;
+    background-image: url(/src/images/bottom-common-bg-tablet.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/src/images/bottom-common-bg-tablet@2x.png);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    height: 2073px;
+    background-image: url(/src/images/bottom-common-bg-desktop.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/src/images/bottom-common-bg-desktop@2x.png);
+      }
+    }
+  }
+}

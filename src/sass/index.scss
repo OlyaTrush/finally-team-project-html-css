@@ -1,2 +1,22 @@
-@import './common';
-@import './example';
+// MIXINS START
+@import './mixins/breakpoints';
+// MIXINS END
+
+// ULITLS START
+@import './utils/variables';
+@import './utils/common';
+@import './utils/container';
+@import './utils/visually-hidden';
+@import './utils/common-backgrounds';
+// UTILS END
+
+// COMPONTENTS START
+@import './components/header';
+@import './components/hero';
+@import './components/about-us';
+@import './components/program';
+@import './components/reviews';
+@import './components/registration';
+@import './components/contact';
+@import './components/footer';
+// COMPONENTS END
