@@ -1,0 +1,100 @@
+
+.reviews{
+  padding-bottom: 32px;
+    @media screen and (min-width: 320px){
+        width: 320px;
+    }
+    @media screen and (min-width: 768px){
+        width: 769px;
+    }
+    @media screen and (min-width: 1280px){
+        width: 1286px;
+    }
+}
+
+.reviews-title{
+font-family: 'Caveat Brush';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.25;
+text-align: center;
+color: $primary-text-color;
+margin-bottom: 12px;
+}
+
+.reviews-list{
+    display: block;
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
+
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
+}
+
+.reviews-list__item1{
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+}
+
+.reviews-list__item2{
+  margin-left: 23px;
+}
+
+.reviews-list__item3{
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+}
+
+.reviews-list__picture{
+   width: 280px;
+}
+.reviews-list__icon{
+    width: 136px;
+    height: 24px;
+    margin-left: 67px;
+   margin-top: 8px;
+}
+
+.reviews-list-title{
+font-style: italic;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+text-align: center;
+color: $primary-text-color;
+margin-top: 8px;
+}
+
+.reviews-text{
+width: 280px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+text-align: center;
+color: $primary-text-color;
+margin-top: 8px;
+margin-left: 23px;
+margin-bottom: 32px;
+}
+
+.reviews-nomber{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: $slider-number-color;
+    margin-left: 150px;
+}
