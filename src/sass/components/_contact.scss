@@ -1,0 +1,71 @@
+.contact {
+    text-align: center;
+    padding: 0 15px;
+}
+.contact__title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.contact__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.8;
+}
+    .contact__title,
+    .contact__subtitle  {
+    margin-bottom: 16px;
+}
+.contact__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact__input {
+    outline: none;
+    margin-bottom: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 320px;
+
+    border: none;
+    border-bottom: 1px solid $rating-star-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.8;
+}
+
+.contact__input::placeholder {
+    color: $placeholder-color;
+}
+
+.contact__input--question {
+    resize: none;
+    overflow: hidden;
+}
+
+.contact__input:not(:focus):invalid {
+    color: red;
+}
+
+.button__send {
+    width: 145px;
+    height: 40px;
+
+    background: $button-color;
+    border: 0;
+    border-radius: 25px;
+
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2.3;
+    color: $button-text-color;
+}
