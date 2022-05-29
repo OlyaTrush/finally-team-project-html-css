@@ -1,0 +1,82 @@
+<header class="header">
+  <div class="container header__container">
+    <img
+      class="header__img header__img--mobile"
+      srcset="
+        ./images/header-donuts-mobile-120.png 120w,
+        ./images/header-donuts-mobile-240.png 240w
+      "
+      sizes="(max-width: 768px) 120px"
+      src="./images/header-donuts-mobile-120.png"
+      alt="Donuts"
+    />
+
+    <img
+      class="header__img header__img--tablet"
+      srcset="
+        ./images/header-donuts-tablet-380.png 380w,
+        ./images/header-donuts-tablet-760.png 760w
+      "
+      sizes="(min-width: 769px) 380px"
+      src="./images/header-donuts-tablet-380.png"
+      alt="Donuts"
+    />
+
+    <img
+      class="header__img header__img--desktop"
+      srcset="
+        ./images/header-donuts-desktop-716.png   716w,
+        ./images/header-donuts-desktop-1432.png 1432w
+      "
+      sizes="(min-width: 1280px) 716px"
+      src="./images/header-donuts-desktop-716.png"
+      alt="Donuts"
+    />
+
+    <nav class="nav" data-menu>
+      <div class="nav__container">
+        <a class="logo" href="./index.html">
+          <svg class="logo__icon" aria-label="Logo">
+            <use
+              class="icon-logo"
+              href="./images/sprite.svg#icon-logo-menu"
+            ></use>
+          </svg>
+        </a>
+
+        <button
+          class="nav__btn nav__menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg class="nav__menu-icon" aria-label="Mobile menu">
+            <use
+              class="nav__icon--menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="nav__icon--close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="pages nav__pages">
+          <li class="pages__item">
+            <a class="pages__link" href="#about-us" data-menu-link>About us</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#program" data-menu-link>Program</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#reviews" data-menu-link>Reviews</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#contacts" data-menu-link>Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
