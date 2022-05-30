@@ -1,0 +1,246 @@
+.registration-section{
+    justify-content: center;
+    align-items: center;
+
+
+     
+    &__title{
+        font-family: 'Caveat Brush';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        color: $grid-text-color;
+
+        @include for-phone-only{
+            width: 106px;
+            margin: 0 auto 20px auto;
+           
+        }
+
+        @include for-tablet-up{
+            height: 65px;
+            margin-bottom: 8px;
+        }
+
+        @include for-desktop-up{
+            height: 65px;
+            margin-bottom: 16px;
+        }
+    }
+
+
+}
+
+.registration-for-phone{
+    @include for-phone-only{
+        display: block;
+        padding: 32px 6px;
+        max-width: 466px;
+        height: 100%;
+        left: 30px;
+        background:$desktop-body-color;
+        box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+        border-radius: 150px 150px 0 0; 
+        justify-content: center;
+    }
+}
+
+.registration{
+    z-index: 2;
+
+  
+
+@include for-tablet-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 704px;
+    height: 260px;
+    left: 32px;
+   
+
+    background: $desktop-body-color;
+    box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+    border-radius: 150px;
+
+    padding: 40px 62px 66px 60px;
+}
+
+  @include for-desktop-up{
+    width: 822px;
+    left: 227px;
+    
+    padding: 54px 107px 53px 105px;
+  }
+
+}
+
+
+.registraction-info{
+
+  @include for-phone-only{
+      border-bottom: 1px solid $placeholder-color;
+  }
+    @include for-tablet-up{
+        border-right: 1px solid $placeholder-color;
+        padding-right: 32px;
+    }
+
+    &__date{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        color:$grid-text-color;
+
+        @include for-phone-only{
+           width: 114px;
+           margin:0 auto
+
+        }
+
+        @include for-tablet-up{
+            width: 90px;
+            height: 66px;
+            text-align: end;
+            margin-bottom: 32px;
+        }
+
+        @include for-desktop-up {
+            width: 127px;
+            height: 48px;
+        }
+    }
+
+    &__cost{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+
+        @include for-phone-only{
+       margin-bottom: 20px;
+       margin-top: 20px;
+        }   
+        
+        @include for-tablet-up{
+            text-align: end;
+        }
+        
+    }
+}
+
+
+.registration-form{
+ 
+    @include for-phone-only{
+     padding: 8px;
+    }
+
+    @include for-tablet-up{
+        margin-left: 24px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__block{
+        @include for-tablet-up{
+            display:block;
+        }
+    }
+
+   &__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color:$grid-text-color;
+
+     @include for-tablet-up{
+         width: 283px;
+         text-align: left;
+     }
+   } 
+
+
+
+   &__input{
+       outline: none;
+       cursor: pointer;
+       border: none;
+       border-bottom: 1px solid $button-color;
+      
+
+    @include for-phone-only{
+     width: 100%;
+     margin-top: 20px ;
+    }
+    
+    @include for-tablet-up{
+        margin-top: 16px;
+        width: 237px;
+    }
+
+    
+
+    &::placeholder{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $placeholder-color;
+
+    }
+
+    &:invalid:not(:placeholder-shown) {
+        border-color: $invalid-form-color;
+    }   
+    }
+
+    &__button{
+        display: block;
+        margin: 0 auto;
+        font-family: 'Caveat Brush';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.28;
+        text-align: center;
+        color: $button-text-color;
+        background: $button-color;
+        border-radius: 25px;
+        padding: 8px 46px 9px 47px;
+        cursor: pointer;
+        
+
+        @include for-phone-only{
+            margin-top: 32px;
+            width: 145px;
+            height: 40px;
+          
+    }
+    
+    @include for-tablet-up{
+        width: 145px;
+        height: 40px;
+    }
+
+    @include for-desktop-up{
+        width: 158px;
+        height: 45px;
+    }
+}
+}
