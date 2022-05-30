@@ -1,6 +1,6 @@
 
 .reviews{
-    // position: relative;
+    position: relative;
   padding-bottom: 32px;
     @media screen and (min-width: 320px){
       width: 480px;
@@ -14,8 +14,6 @@
 }
 
 .reviews-title{
-// position: absolute;
-top: 0;
 font-family: 'Caveat Brush';
 font-style: normal;
 font-weight: 400;
@@ -244,3 +242,10 @@ height: 220px;
        top: 1942px;
     }
 }
+
+// .reviews-nomber::before{
+//     content: " ";
+//     width: 35px;
+//     position: absolute;
+//     top: 1942px;
+// }
