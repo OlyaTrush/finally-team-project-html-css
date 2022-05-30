@@ -18,16 +18,21 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 1.25;
-// text-align: center;
 color: $primary-text-color;
 margin-bottom: 12px;
 margin-left: 130px;
+@media screen and (min-width: 768px){
+margin-left: 350px;
+}
 }
 
+
+// list
 .reviews-list{
     display: block;
     @media screen and (min-width: 768px){
         display: flex;
+        position: relative;
     }
 
     @media screen and (min-width: 1280px){
@@ -41,11 +46,21 @@ margin-left: 130px;
     }
     @media screen and (min-width: 768px){
         display: block;
+        position: absolute;
+        top: 37px;
+      left: 23px;
     }
 }
 
 .reviews-list__item2{
   margin-left: 23px;
+  @media screen and (min-width: 768px){
+  
+    position: absolute;
+    top: 113px;
+    left: 200px;
+  
+}
 }
 
 .reviews-list__item3{
@@ -53,30 +68,75 @@ margin-left: 130px;
         display: none;
     }
     @media screen and (min-width: 768px){
-        display: block;
+        display: block;  
+    position: absolute;
+    top: 37px;
+    left: 590px;
     }
 }
 
-.reviews-list__picture{
-   width: 280px;
+// picture
+.reviews-list__picture1{
+    width: 151px;
 }
-.reviews-list__icon{
+.reviews-list__picture2{
+   width: 280px;
+   @media screen and (min-width: 768px){
+    width: 336px;
+}
+}
+
+.reviews-list__picture3{
+    width: 152px;
+}
+
+// icon
+
+.reviews-list__icon1{
+    width: 136px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.reviews-list__icon2{
     width: 136px;
     height: 24px;
     margin-left: 67px;
    margin-top: 8px;
+   @media screen and (min-width: 768px){
+margin-left: 110px;
+}
+}
+.reviews-list__icon3{
+    width: 136px;
+    height: 24px;  
+    margin-left: 10px;
+    margin-top: 8px;
 }
 
+// text
+.reviews-list-title2{
+font-style: italic;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+color: $primary-text-color;
+margin-top: 8px;
+margin-left: 130px;
+@media screen and (min-width: 768px){
+    margin-left: 160px;
+    }
+}
 .reviews-list-title{
 font-style: italic;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
-// text-align: center;
 color: $primary-text-color;
 margin-top: 8px;
-margin-left: 130px;
+margin-left: 50px;
 }
+
 
 .reviews-text{
 width: 280px;
@@ -89,6 +149,13 @@ color: $primary-text-color;
 margin-top: 8px;
 margin-left: 23px;
 margin-bottom: 32px;
+height: 220px;
+@media screen and (min-width: 768px){
+    margin-top: 550px;
+    margin-left: 32px;
+    width: 704px;
+    height: 120px;
+}
 }
 
 .reviews-nomber{
@@ -99,4 +166,9 @@ margin-bottom: 32px;
     text-align: center;
     color: $slider-number-color;
     margin-left: 150px;
+    @media screen and (min-width: 768px){
+        margin-left: 390px;
+        position: absolute;
+       top: 1330px;
+    }
 }
