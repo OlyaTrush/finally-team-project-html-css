@@ -1,4 +1,9 @@
 .contact {
+    padding-top: 32px;
+    @include for-tablet-up {
+    padding-top: 78px;}
+    @include for-desktop-up {
+    padding-top: 160px;}
     text-align: center;
     padding: 0 15px;
 }
@@ -41,6 +46,8 @@
     width: 100%;
     max-width: 320px;
     
+    background-color: transparent;
+    color: inherit;
     outline: none;
     border: none;
     border-bottom: 1px solid $rating-star-color;
@@ -50,33 +57,36 @@
     font-size: 16px;
     line-height: 0.8;
     @include for-tablet-up {
-    max-width: 336px;
+        max-width: 336px;
     }
     @include for-desktop-up {
-    max-width: 394px;
-    background-color: $desktop-body-color;
+        max-width: 394px;
+    }
+    &:focus{
+        padding: 0 5px;
+        border-radius: 25px;
+        caret-color: transparent;
+    }
+
+    &:not(:focus):invalid {
+        color: $invalid-form-color;
     }
 }
 
 .contact__input::placeholder {
     color: $placeholder-color;
 }
-.contact__input--question::placeholder {
-    transform: translateY(75%);
-}
 
 .contact__input--question {
     resize: none;
     overflow: hidden;
+    min-height: 20px;
     margin-top: 20px;
     @include for-tablet-up {
             margin-top: 15px;
             }
 }
 
-.contact__input:not(:focus):invalid {
-    color: $invalid-form-color;
-}
 
 .button__send {
     padding: 0;
