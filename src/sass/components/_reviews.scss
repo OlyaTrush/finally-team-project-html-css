@@ -1,5 +1,6 @@
 
 .reviews{
+    // position: relative;
   padding-bottom: 32px;
     @media screen and (min-width: 320px){
       width: 480px;
@@ -8,22 +9,27 @@
         width: 769px;
     }
     @media screen and (min-width: 1280px){
-        width: 1280.22px;
+        width: 1280px;
     }
 }
 
 .reviews-title{
+// position: absolute;
+top: 0;
 font-family: 'Caveat Brush';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 1.25;
 color: $primary-text-color;
-margin-bottom: 12px;
 margin-left: 130px;
 @media screen and (min-width: 768px){
 margin-left: 350px;
 }
+ @media screen and (min-width: 1280px){
+ margin-left: 650px;
+font-size: 36px;
+ }
 }
 
 
@@ -50,17 +56,24 @@ margin-left: 350px;
         top: 37px;
       left: 23px;
     }
+       
+@media screen and (min-width: 1280px){
+    top: 136px;
+   left: 126px;
+  }
 }
 
 .reviews-list__item2{
   margin-left: 23px;
   @media screen and (min-width: 768px){
-  
     position: absolute;
     top: 113px;
     left: 200px;
-  
 }
+@media screen and (min-width: 1280px){
+    top: 279px;
+   left: 448px;
+  }
 }
 
 .reviews-list__item3{
@@ -73,21 +86,36 @@ margin-left: 350px;
     top: 37px;
     left: 590px;
     }
+    @media screen and (min-width: 1280px){
+        top: 136px;
+       left: 894px;
+      }
 }
 
 // picture
 .reviews-list__picture1{
     width: 151px;
+   
+@media screen and (min-width: 1280px){
+      width: 285px;
+    }
 }
 .reviews-list__picture2{
    width: 280px;
    @media screen and (min-width: 768px){
     width: 336px;
 }
+@media screen and (min-width: 1280px){
+  width: 394px;
+}
 }
 
 .reviews-list__picture3{
     width: 152px;
+   
+@media screen and (min-width: 1280px){
+      width: 288px;
+    }
 }
 
 // icon
@@ -97,6 +125,9 @@ margin-left: 350px;
     height: 24px;
     margin-left: 10px;
     margin-top: 8px;
+    @media screen and (min-width: 1280px){
+        margin-left: 75px;
+        }
 }
 .reviews-list__icon2{
     width: 136px;
@@ -106,15 +137,35 @@ margin-left: 350px;
    @media screen and (min-width: 768px){
 margin-left: 110px;
 }
+
+@media screen and (min-width: 1280px){
+    margin-left: 140px;
+    }
 }
 .reviews-list__icon3{
     width: 136px;
     height: 24px;  
     margin-left: 10px;
     margin-top: 8px;
+    @media screen and (min-width: 1280px){
+        margin-left: 75px;
+        }
 }
 
 // text
+.reviews-list-title1{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $primary-text-color;
+    margin-top: 8px;
+    margin-left: 50px;
+    @media screen and (min-width: 1280px){
+        margin-left: 121px;
+         }
+    }
+
 .reviews-list-title2{
 font-style: italic;
 font-weight: 500;
@@ -126,8 +177,11 @@ margin-left: 130px;
 @media screen and (min-width: 768px){
     margin-left: 160px;
     }
+@media screen and (min-width: 1280px){
+    margin-left: 191px;
+     }
 }
-.reviews-list-title{
+.reviews-list-title3{
 font-style: italic;
 font-weight: 500;
 font-size: 14px;
@@ -135,6 +189,9 @@ line-height: 1.2;
 color: $primary-text-color;
 margin-top: 8px;
 margin-left: 50px;
+@media screen and (min-width: 1280px){
+    margin-left: 105px;
+     }
 }
 
 
@@ -153,9 +210,18 @@ height: 220px;
 @media screen and (min-width: 768px){
     margin-top: 550px;
     margin-left: 32px;
+    line-height: 1.21;
     width: 704px;
     height: 120px;
 }
+@media screen and (min-width: 1280px){
+    margin-top: 750px;
+    margin-left: 160px;
+    font-size: 18px;
+    line-height: 1.21;
+    width: 1000px;
+    height: 88px;
+     }
 }
 
 .reviews-nomber{
@@ -170,5 +236,11 @@ height: 220px;
         margin-left: 390px;
         position: absolute;
        top: 1330px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-left: 660px;
+        position: absolute;
+       top: 1942px;
     }
 }
