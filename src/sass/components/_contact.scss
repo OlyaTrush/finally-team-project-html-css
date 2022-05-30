@@ -37,13 +37,11 @@
     flex-direction: column;
 }
 .contact__input {
-    outline: none;
-    // margin-bottom: 22px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
     width: 100%;
     max-width: 320px;
-
+    
+    outline: none;
     border: none;
     border-bottom: 1px solid $rating-star-color;
     font-family: 'Montserrat';
@@ -63,11 +61,17 @@
 .contact__input::placeholder {
     color: $placeholder-color;
 }
+.contact__input--question::placeholder {
+    transform: translateY(75%);
+}
 
 .contact__input--question {
     resize: none;
     overflow: hidden;
     margin-top: 20px;
+    @include for-tablet-up {
+            margin-top: 15px;
+            }
 }
 
 .contact__input:not(:focus):invalid {
@@ -83,7 +87,7 @@
     background: $button-color;
     border: 0;
     border-radius: 25px;
-
+    cursor: pointer;
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
