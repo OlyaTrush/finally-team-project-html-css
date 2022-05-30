@@ -1,0 +1,47 @@
+<section class="registration-section container">
+      <div class="registration-for-phone">
+        <h2 class="registration-section__title">
+            Registration
+        </h2>
+    
+    
+        <div class="registration">
+    
+            <div class="registraction-info">
+                <p class="registraction-info__date">
+                    May 23, 11:00 New York
+                </p>
+    
+                <p class="registraction-info__cost">
+                    $ 699
+                </p>
+            </div>
+    
+    
+            <form class="registration-form">
+    
+               <div class="registration-form__block">
+                <p class="registration-form__title"> 
+                    Apply your personal info for registration 
+                </p>
+    
+                <label for="form-name" class="registration-form__label"></label>
+                <input class="registration-form__input" type="text" name="name of the person" id="form-name" placeholder="Your name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$">
+    
+    
+                <label for="form-phone" class="registration-form__label"></label>
+                <input class="registration-form__input" type="number" name="phone of the person" id="form-phone" placeholder="Phone number" required pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+    
+                <label for="form-email" class="registration-form__label"></label>
+                <input class="registration-form__input" type="email" name="email of the person" id="form-email" placeholder="Email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+               </div>
+
+               <button class="registration-form__button" type="submit">
+                Register
+            </button>
+    
+            </form>
+    
+    </div>
+      </div>
+</section>
