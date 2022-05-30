@@ -7,6 +7,9 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
+    @include for-desktop-up {
+    font-size: 36px;
+        }
 }
 
 .contact__subtitle {
@@ -14,8 +17,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 0.8;
+    @include for-desktop-up {
+    font-size: 18px;
+    line-height: 1.22;
+    }
 }
-    .contact__title,
+    .contact__title {
+    margin-bottom: 16px;
+    @include for-tablet-up {
+        margin-bottom: 20px;
+    }
+}
     .contact__subtitle  {
     margin-bottom: 16px;
 }
@@ -26,7 +38,7 @@
 }
 .contact__input {
     outline: none;
-    margin-bottom: 22px;
+    // margin-bottom: 22px;
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
@@ -39,6 +51,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 0.8;
+    @include for-tablet-up {
+    max-width: 336px;
+    }
+    @include for-desktop-up {
+    max-width: 394px;
+    background-color: $desktop-body-color;
+    }
 }
 
 .contact__input::placeholder {
@@ -48,15 +67,18 @@
 .contact__input--question {
     resize: none;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .contact__input:not(:focus):invalid {
-    color: red;
+    color: $invalid-form-color;
 }
 
 .button__send {
+    padding: 0;
     width: 145px;
     height: 40px;
+    margin-top: 32px;
 
     background: $button-color;
     border: 0;
@@ -67,5 +89,15 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 2.3;
+    text-align: center;
     color: $button-text-color;
+    @include for-desktop-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px auto 0 auto;
+        width: 182px;
+        height: 45px;
+        font-size: 24px;
+    }
 }
