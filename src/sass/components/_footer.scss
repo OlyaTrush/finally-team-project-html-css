@@ -2,3 +2,33 @@
     padding-top: 32px;
 }
 
+
+.address__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @include for-tablet-up {
+        margin-top: 61;
+    }
+
+    @include for-desktop-up {
+        margin-top: 81;
+    }
+}
+
+.address__link {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    color: $primary-text-color;
+}
+
+.address__icon {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    margin-right: 4px;
+}
