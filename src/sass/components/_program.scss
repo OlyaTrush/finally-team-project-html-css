@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 30px;
+    margin-bottom: 60px;
         }
 
     @media (min-width:1199px){
@@ -44,7 +45,6 @@
 
     &__list{
         padding: 0;
-        margin-bottom: 60px;
         @media (min-width:769px) and (max-width:1199px){
             max-width: 620px;
             }
