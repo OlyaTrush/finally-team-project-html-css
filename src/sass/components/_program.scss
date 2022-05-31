@@ -1,3 +1,7 @@
+.program-section{
+    margin-top: 40px;
+}
+
 .program-wrap{
     @media (min-width:769px){
         display: flex;
@@ -7,6 +11,7 @@
         display: flex;
     }
 }
+
 
 .program{
 
@@ -21,7 +26,7 @@
     @media (min-width:1199px){
     display: flex;
     flex-direction: column;
-    margin-right: 140px;
+    // margin-right: 140px;
         }
 
     &__title{
@@ -172,7 +177,7 @@ justify-content: center;
 @media (min-width:1199px){
     width: 180px;
     height: 180px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 

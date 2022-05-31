@@ -493,6 +493,10 @@ a {
   }
 }
 
+.program-section {
+  margin-top: 40px;
+}
+
 @media (min-width: 769px) {
   .program-wrap {
     display: flex;
@@ -504,19 +508,20 @@ a {
   }
 }
 
+.program {
+  margin-bottom: 60px;
+}
 @media (min-width: 769px) {
   .program {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
-    margin-bottom: 60px;
   }
 }
 @media (min-width: 1199px) {
   .program {
     display: flex;
     flex-direction: column;
-    margin-right: 140px;
   }
 }
 .program__title {
@@ -662,7 +667,7 @@ a {
   .ponchik__item {
     width: 180px;
     height: 180px;
-    margin-right: 50px;
+    margin-right: 100px;
   }
 }
 .ponchik__item:nth-of-type(2) {
