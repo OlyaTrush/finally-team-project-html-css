@@ -10,11 +10,12 @@
 
 .program{
 
+    margin-bottom: 60px;
+
     @media (min-width:769px){
     display: flex;
     flex-direction: column;
     margin-right: 30px;
-    margin-bottom: 60px;
         }
 
     @media (min-width:1199px){
@@ -116,8 +117,6 @@
     }
     }
 }
-
-
 
 
 .ponchik-wrap{
