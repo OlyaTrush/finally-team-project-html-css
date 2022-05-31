@@ -1,297 +1,276 @@
-.reviews{
-<<<<<<< Updated upstream
-    padding-bottom: 320px;
-=======
-    padding-bottom: 32px;
-    display: flex;
->>>>>>> Stashed changes
-      @media screen and (min-width: 320px){
-       max-width: 480px;
-      }
-      @media screen and (min-width: 768px){
-        width: 768px;
-    }
-    @media screen and (min-width: 1280px){
-        width: 1280px;
-    }
+.reviews {
+  padding-bottom: 320px;
+  padding-bottom: 32px;
+  display: flex;
+
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }
 
+.reviews-title {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
 
-    
-.reviews-title{
-    font-family: 'Caveat Brush';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.25;
-    color: $primary-text-color;
-<<<<<<< Updated upstream
-   text-align: center;
-    @media screen and (min-width: 768px){
-        padding-top: 30px;
-        text-align: center;
-        }
-         @media screen and (min-width: 1280px){
-            padding-top: 60px;
-         font-size: 36px;
-         text-align: center;
-=======
+  color: $primary-text-color;
   text-align: center;
-    @media screen and (min-width: 768px){
-        text-align: center;
-     
-        }
-         @media screen and (min-width: 1280px){
-            text-align: center;
-        font-size: 36px;
->>>>>>> Stashed changes
-         }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    font-size: 36px;
+    text-align: center;
+
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1280px) {
+      text-align: center;
+      font-size: 36px;
+    }
+  }
 }
 
 // list
 
-.reviews-list{
-    display: block;
-    @media screen and (min-width: 768px){
-      position: relative;
-       
-    }
+.reviews-list {
+  display: block;
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 
-    @media screen and (min-width: 1280px){
-        position: relative;
-    }
-}
-
-
-.reviews-list__item1{
-@media screen and (min-width: 320px) {
-        display: none;
-    }
- @media screen and (min-width: 768px){
-        display: block;
-        position: absolute;
-        left: 30px;
-  
-    }
-           
-@media screen and (min-width: 1280px){
-<<<<<<< Updated upstream
-    top: 6px;
-  left: 100px;
-=======
-    top: 100px;
-  left: 0px;
-  width: 285px;
->>>>>>> Stashed changes
+  @media screen and (min-width: 1280px) {
+    position: relative;
   }
 }
 
-.reviews-list__item2{
-    margin-top: 36px;
-    @media screen and (min-width: 768px){
+.reviews-list__item1 {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 6px;
+    left: 100px;
+
+    top: 100px;
+    left: 0px;
+    width: 285px;
+  }
+}
+
+.reviews-list__item2 {
+  margin-top: 36px;
+  @media screen and (min-width: 768px) {
     width: 336px;
     position: absolute;
     left: 200px;
-<<<<<<< Updated upstream
+
     top: 70px;
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     top: 219px;
     left: 420px;
-=======
+
     top: 100px;
     margin-top: 0;
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     top: 279px;
     left: 320px;
->>>>>>> Stashed changes
+
     width: 394px;
     margin-top: 0;
   }
 }
 
-.reviews-list__item3{
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
-    @media screen and (min-width: 768px){
-        display: block; 
-        position: absolute; 
-        left: 550px;
-       
-    }
-    @media screen and (min-width: 1280px){
-<<<<<<< Updated upstream
-        top: 46px;
-        left: 850px;
-      width: 288px;
-=======
-        top: 136px;
-        left: 750px;
-        width: 288px;
->>>>>>> Stashed changes
-      }
+.reviews-list__item3 {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 550px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 46px;
+    left: 850px;
+    width: 288px;
+
+    top: 136px;
+    left: 750px;
+    width: 288px;
+  }
 }
 
 // picture
 
-.reviews-list__picture1{
-    width: 151px;
-    @media screen and (min-width: 1280px){
-        width: 285px;
-      }
+.reviews-list__picture1 {
+  width: 151px;
+  @media screen and (min-width: 1280px) {
+    width: 285px;
+  }
 }
 
-  
-.reviews-list__picture2{
-    width: 280px;
-    @media screen and (min-width: 768px){
-     width: 336px;
- }
- @media screen and (min-width: 1280px){
+.reviews-list__picture2 {
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
     width: 394px;
   }
 }
 
-.reviews-list__picture3{
-    width: 152px;
-    @media screen and (min-width: 1280px){
-        width: 288px;
-      }
+.reviews-list__picture3 {
+  width: 152px;
+  @media screen and (min-width: 1280px) {
+    width: 288px;
+  }
 }
 
 // icon
 
-.reviews-list__icon1{
-    width: 136px;
-    height: 24px;
-    margin-top: 8px;
-    @media screen and (min-width: 1280px){
-        margin-left: 75px;
-        }
+.reviews-list__icon1 {
+  width: 136px;
+  height: 24px;
+  margin-top: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 75px;
+  }
 }
 
-
-.reviews-list__icon2{
-    width: 136px;
-    height: 24px;
-    margin-left: 67px;
-   margin-top: 8px;
-   @media screen and (min-width: 768px){
+.reviews-list__icon2 {
+  width: 136px;
+  height: 24px;
+  margin-left: 67px;
+  margin-top: 8px;
+  @media screen and (min-width: 768px) {
     margin-left: 100px;
-    }
-   @media screen and (min-width: 1280px){
+  }
+  @media screen and (min-width: 1280px) {
     margin-left: 140px;
-    }
+  }
 }
 
-.reviews-list__icon3{
-    width: 136px;
-    height: 24px; 
-    margin-left: 10px;
-    margin-top: 8px;
-    @media screen and (min-width: 1280px){
-        margin-left: 75px;
-        } 
+.reviews-list__icon3 {
+  width: 136px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 75px;
+  }
 }
 
 // text
-.reviews-list-title1{
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    color: $primary-text-color;
-    margin-top: 8px;
-    margin-left: 50px;
-    @media screen and (min-width: 1280px){
-        margin-left: 121px;
-         }
+.reviews-list-title1 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $primary-text-color;
+  margin-top: 8px;
+  margin-left: 50px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 121px;
+  }
 }
 
-.reviews-list-title2{
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    color: $primary-text-color;
-    margin-top: 8px;
-    margin-left: 120px;
-    @media screen and (min-width: 768px){
-        margin-left: 150px;
-        }
-    @media screen and (min-width: 1280px){
-        margin-left: 191px;
-         }
+.reviews-list-title2 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $primary-text-color;
+  margin-top: 8px;
+  margin-left: 120px;
+  @media screen and (min-width: 768px) {
+    margin-left: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 191px;
+  }
 }
 
-.reviews-list-title3{
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    color: $primary-text-color;
-    margin-top: 8px;
-    margin-left: 40px;
-    @media screen and (min-width: 1280px){
-        margin-left: 105px;
-         }
-}    
+.reviews-list-title3 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $primary-text-color;
+  margin-top: 8px;
+  margin-left: 40px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 105px;
+  }
+}
 
-.reviews-text{
-    width: 280px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: center;
-    color: $primary-text-color;
-    margin-top: 8px;
+.reviews-text {
+  width: 280px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 8px;
+  margin-left: 0;
+  margin-bottom: 32px;
+  height: 220px;
+  @media screen and (min-width: 768px) {
+    margin-top: 500px;
+    line-height: 1.21;
+    width: 760px;
+    height: 120px;
+    padding-right: 70px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 720px;
+
+    margin-top: 770px;
+
     margin-left: 0;
-    margin-bottom: 32px;
-    height: 220px;
-    @media screen and (min-width: 768px){
-      margin-top: 500px;
-        line-height: 1.21;
-        width: 760px;
-        height: 120px;
-        padding-right: 70px;
-    }
-    @media screen and (min-width: 1280px){
-<<<<<<< Updated upstream
-        margin-top: 720px;
-=======
-        margin-top: 770px;
->>>>>>> Stashed changes
-        margin-left: 0;
-        font-size: 18px;
-        line-height: 1.21;
-        width: 1248px;
-        height: 88px;
-        padding-right: 220px;
-     
-         }
-    }
+    font-size: 18px;
+    line-height: 1.21;
+    width: 1248px;
+    height: 88px;
+    padding-right: 220px;
+  }
+}
 
+.reviews-number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: $slider-number-color;
+  margin-left: 130px;
+  @media screen and (min-width: 768px) {
+    margin-left: 350px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 620px;
 
-.reviews-number{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    color: $slider-number-color;
-    margin-left: 130px;
-    @media screen and (min-width: 768px){
-        margin-left: 350px;
-    }
-    @media screen and (min-width: 1280px){
-<<<<<<< Updated upstream
-margin-left: 620px;
-
-=======
-margin-left: 520px;
->>>>>>> Stashed changes
-    }
-    }
+    margin-left: 520px;
+  }
+}
