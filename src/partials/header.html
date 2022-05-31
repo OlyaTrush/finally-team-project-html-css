@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="container header__container">
+    <nav id="nav" class="nav" data-menu>
+      <div class="nav__container">
+        <a class="logo" href="./index.html">
+          <svg class="logo__icon" aria-label="Logo">
+            <use
+              class="icon-logo"
+              href="./images/sprite.svg#icon-logo-menu"
+            ></use>
+          </svg>
+        </a>
+
+        <button
+          class="nav__btn nav__menu-btn"
+          aria-expanded="false"
+          aria-controls="nav"
+          data-menu-button
+        >
+          <svg class="nav__menu-icon" aria-label="Mobile menu">
+            <use
+              class="nav__icon--menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="nav__icon--close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="pages nav__pages">
+          <li class="pages__item">
+            <a class="pages__link" href="#about-us" data-menu-link>About us</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#program" data-menu-link>Program</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#reviews" data-menu-link>Reviews</a>
+          </li>
+          <li class="pages__item">
+            <a class="pages__link" href="#contacts" data-menu-link>Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

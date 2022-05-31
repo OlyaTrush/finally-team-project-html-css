@@ -1,12 +1,19 @@
 .contact {
+    padding: 32px 15px 0 15px;
+    @include for-tablet-up {
+    padding-top: 78px;}
+    @include for-desktop-up {
+    padding-top: 160px;}
     text-align: center;
-    padding: 0 15px;
 }
 .contact__title {
     font-family: 'Caveat Brush';
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
+    @include for-desktop-up {
+    font-size: 36px;
+        }
 }
 
 .contact__subtitle {
@@ -14,8 +21,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 0.8;
+    @include for-desktop-up {
+    font-size: 18px;
+    line-height: 1.22;
+    }
 }
-    .contact__title,
+    .contact__title {
+    margin-bottom: 16px;
+    @include for-tablet-up {
+        margin-bottom: 20px;
+    }
+}
     .contact__subtitle  {
     margin-bottom: 16px;
 }
@@ -25,13 +41,13 @@
     flex-direction: column;
 }
 .contact__input {
-    outline: none;
-    margin-bottom: 22px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
     width: 100%;
     max-width: 320px;
-
+    
+    background-color: transparent;
+    color: inherit;
+    outline: none;
     border: none;
     border-bottom: 1px solid $rating-star-color;
     font-family: 'Montserrat';
@@ -39,6 +55,21 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 0.8;
+    @include for-tablet-up {
+        max-width: 336px;
+    }
+    @include for-desktop-up {
+        max-width: 394px;
+    }
+    &:focus{
+        padding: 0 5px;
+        border-radius: 25px;
+        caret-color: transparent;
+    }
+
+    &:not(:focus):invalid {
+        color: $invalid-form-color;
+    }
 }
 
 .contact__input::placeholder {
@@ -48,24 +79,65 @@
 .contact__input--question {
     resize: none;
     overflow: hidden;
+    min-height: 20px;
+    margin-top: 20px;
+    @include for-tablet-up {
+            margin-top: 15px;
+            }
 }
 
-.contact__input:not(:focus):invalid {
-    color: red;
-}
 
 .button__send {
+    position: relative;
+    padding: 0;
     width: 145px;
     height: 40px;
+    margin-top: 32px;
 
     background: $button-color;
     border: 0;
     border-radius: 25px;
-
+    cursor: pointer;
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 2.3;
+    text-align: center;
     color: $button-text-color;
+    @include for-desktop-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px auto 0 auto;
+        width: 182px;
+        height: 45px;
+        font-size: 24px;
+    }
+}
+.thanks {
+    position: absolute;
+    display: flex;
+    scale: 0;
+    pointer-events: none;
+    top: -400%;
+    left: -50%;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    height: 150px;
+    background: $button-color;
+    border-radius: 50px;
+    transform: scale(0);
+
+    transition: scale(1) 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        font-family: 'Caveat Brush';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.25;
+}
+
+.button__send:active .thanks {
+    transform: scale(1);
 }
