@@ -4,12 +4,14 @@
        max-width: 480px;
       }
       @media screen and (min-width: 768px){
-        max-width: 769px;
+        width: 768px;
     }
     @media screen and (min-width: 1280px){
-        max-width: 1280px;
+        width: 1280px;
     }
 }
+
+
     
 .reviews-title{
     font-family: 'Caveat Brush';
@@ -20,10 +22,12 @@
     color: $primary-text-color;
     margin-left: 110px;
     @media screen and (min-width: 768px){
+        padding-top: 30px;
         margin-left: 350px;
      
         }
          @media screen and (min-width: 1280px){
+            padding-top: 60px;
          margin-left: 600px;
         font-size: 36px;
          }
@@ -52,13 +56,12 @@
         display: block;
         position: absolute;
         left: 30px;
-        top: 30px;
+  
     }
            
 @media screen and (min-width: 1280px){
-    top: 136px;
+    top: 6px;
   left: 100px;
-  width: 285px;
   }
 }
 
@@ -67,10 +70,10 @@
     width: 336px;
     position: absolute;
     left: 200px;
-    top: 100px;
+    top: 70px;
   }
   @media screen and (min-width: 1280px){
-    top: 279px;
+    top: 219px;
     left: 420px;
     width: 394px;
   }
@@ -84,12 +87,12 @@
         display: block; 
         position: absolute; 
         left: 550px;
-        top: 30px;
+       
     }
     @media screen and (min-width: 1280px){
-        top: 136px;
+        top: 76px;
         left: 850px;
-        width: 288px;
+      width: 288px;
       }
 }
 
@@ -97,15 +100,12 @@
 
 .reviews-list__picture1{
     width: 151px;
-    @media screen and (min-width: 768px){
-        width: 151px;
-        
-    }    
-@media screen and (min-width: 1280px){
-      width: 285px;
-    }
+    @media screen and (min-width: 1280px){
+        width: 285px;
+      }
 }
 
+  
 .reviews-list__picture2{
     width: 280px;
     @media screen and (min-width: 768px){
@@ -118,13 +118,9 @@
 
 .reviews-list__picture3{
     width: 152px;
-@media screen and (min-width: 768px){
-        width: 152px;
-       
-    }  
-@media screen and (min-width: 1280px){
-      width: 285px;
-    }
+    @media screen and (min-width: 1280px){
+        width: 288px;
+      }
 }
 
 // icon
