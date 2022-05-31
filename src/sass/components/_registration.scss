@@ -100,7 +100,42 @@
     padding: 54px 107px 53px 105px;
   }
 
+  &__confetti--tablet{
+    @include for-phone-only{
+        display: none;
+    }
+
+    @include for-tablet-up{
+        height: 345.35px;
+        left: 504px;
+        position: absolute;
+        top: 113px;
+    }
+
+    @include for-desktop-up{
+        display: none;
+    }
 }
+
+&__confetti--desktop{
+    @include for-phone-only{
+        display: none;
+    }
+
+    @include for-tablet-only{
+        display: none;
+    }
+
+    @include for-desktop-up{
+        top: 50px;
+       left: 730px;
+       transform: rotate(4.68deg);
+       position: absolute;
+}
+    }
+}
+
+
 
 
 .registraction-info{
@@ -160,6 +195,8 @@
         }
         
     }
+
+    
 }
 
 
