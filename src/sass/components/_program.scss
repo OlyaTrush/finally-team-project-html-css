@@ -1,3 +1,7 @@
+.program-section{
+    margin-top: 40px;
+}
+
 .program-wrap{
     @media (min-width:769px){
         display: flex;
@@ -8,7 +12,10 @@
     }
 }
 
+
 .program{
+
+    margin-bottom: 60px;
 
     @media (min-width:769px){
     display: flex;
@@ -19,7 +26,7 @@
     @media (min-width:1199px){
     display: flex;
     flex-direction: column;
-    margin-right: 140px;
+    // margin-right: 140px;
         }
 
     &__title{
@@ -44,7 +51,6 @@
 
     &__list{
         padding: 0;
-        margin-bottom: 60px;
         @media (min-width:769px) and (max-width:1199px){
             max-width: 620px;
             }
@@ -118,8 +124,6 @@
 }
 
 
-
-
 .ponchik-wrap{
     display: flex;
     justify-content: space-between;
@@ -173,7 +177,7 @@ justify-content: center;
 @media (min-width:1199px){
     width: 180px;
     height: 180px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 
