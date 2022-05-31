@@ -39,15 +39,17 @@
   @include for-desktop-up {
     width: 1280px;
 
-    background-image: url('../images/header-donuts-desktop-716.png'),
+    background-image: url('../images/spoon-desktop-145.png'),
+      url('../images/header-donuts-desktop-716.png'),
       url('../images/top-common-bg-desktop.png');
-    background-position: right top, center top;
-    background-size: 716px, 1280px;
+    background-position: left 501px, right top, center top;
+    background-size: 145px, 716px, 1280px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/header-donuts-desktop-1432.png'),
+      background-image: url('../images/spoon-desktop-289.png'),
+        url('../images/header-donuts-desktop-1432.png'),
         url('../images/top-common-bg-desktop@2x.png');
     }
   }
@@ -62,7 +64,7 @@
   }
 
   background-image: url('../images/flour-mobile-84.png'),
-  url(/src/images/bottom-common-bg-mob.png);
+    url(/src/images/bottom-common-bg-mob.png);
 
   background-repeat: no-repeat;
   background-position: right bottom, center top;
@@ -79,14 +81,16 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url('../images/flour-mobile-168.png'), url(/src/images/bottom-common-bg-mob@2x.png);
+      background-image: url('../images/flour-mobile-168.png'),
+        url(/src/images/bottom-common-bg-mob@2x.png);
     }
   }
 
   // @media screen and (min-width: 768px) {}
   @include for-tablet-up {
     width: 768px;
-    background-image: url('../images/flour-tablet-184.png'), url(/src/images/bottom-common-bg-tablet.png);
+    background-image: url('../images/flour-tablet-184.png'),
+      url(/src/images/bottom-common-bg-tablet.png);
     background-position: right bottom, center top;
     background-size: 184px 119px, 769px;
     // height: 1519px;
@@ -95,21 +99,24 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url('../images/flour-tablet-368.png'), url(/src/images/bottom-common-bg-tablet@2x.png);
+        background-image: url('../images/flour-tablet-368.png'),
+          url(/src/images/bottom-common-bg-tablet@2x.png);
       }
     }
   }
 
   @include for-desktop-up {
     width: 1280px;
-    background-image: url('../images/flour-desktop-302.png'), url(/src/images/bottom-common-bg-desktop.png);
+    background-image: url('../images/flour-desktop-302.png'),
+      url(/src/images/bottom-common-bg-desktop.png);
     background-position: bottom right, center top;
     background-size: 302px 175px, 1280px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url('../images/flour-desktop-604.png'), url(/src/images/bottom-common-bg-desktop@2x.png);
+        background-image: url('../images/flour-desktop-604.png'),
+          url(/src/images/bottom-common-bg-desktop@2x.png);
       }
     }
   }
