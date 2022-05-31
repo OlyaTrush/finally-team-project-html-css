@@ -11,7 +11,9 @@ $slider-number-color: #ab816c;
 $grid-text-color: #000000;
 $grid-color: #fef3e4;
 $grid-icon-color: #674d40;
+$invalid-form-color: red;
 $placeholder-color: rgba(171, 129, 108, 0.5);
+$box-shadow-color: rgba(171, 129, 108, 0.15);
 
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -19,8 +21,12 @@ body {
   font-family: 'Montserrat', 'sans-serif';
   background-color: $body-white-color;
   color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.25;
 
   @media screen and (min-width: 1280px) {
     background-color: $desktop-body-color;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
