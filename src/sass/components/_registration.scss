@@ -1,6 +1,8 @@
 .registration-section{
     justify-content: center;
     align-items: center;
+    position: relative;
+
 
 
      
@@ -30,8 +32,28 @@
         }
     }
 
+    &__donut{
+        z-index: 10;
+        position: absolute;
 
+        @include for-phone-only{
+            display: none;
+        }
+    
+        @include for-tablet-only {
+          
+            top: -35px;
+            left: -22px;
+         
+        }
+    
+        @include for-desktop-up{
+            top: -1px;
+            left: 135px;
+        }
+    }
 }
+
 
 .registration-for-phone{
     @include for-phone-only{
@@ -47,20 +69,21 @@
     }
 }
 
-.registration{
-    z-index: 2;
 
+.registration{
+    z-index: 20;
+   
   
 
 @include for-tablet-up{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    position: absolute;
+    position: relative;
+   
     width: 704px;
     height: 260px;
-    left: 32px;
+    
    
 
     background: $desktop-body-color;
@@ -72,7 +95,7 @@
 
   @include for-desktop-up{
     width: 822px;
-    left: 227px;
+    left:227px;
     
     padding: 54px 107px 53px 105px;
   }
@@ -193,6 +216,12 @@
         width: 237px;
     }
 
+    &:focus{
+        padding: 0 5px;
+        border-radius: 25px;
+        caret-color: transparent;
+    }
+
     
 
     &::placeholder{
@@ -208,6 +237,13 @@
     &:invalid:not(:placeholder-shown) {
         border-color: $invalid-form-color;
     }   
+
+    &:not(:focus):invalid {
+        color: $invalid-form-color;
+    }
+    &:valid{
+        background-color: $desktop-body-color;
+    }
     }
 
     &__button{
@@ -222,6 +258,7 @@
         color: $button-text-color;
         background: $button-color;
         border-radius: 25px;
+        border: none;
         padding: 8px 46px 9px 47px;
         cursor: pointer;
         

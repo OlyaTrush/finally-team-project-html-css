@@ -3,6 +3,25 @@
         <h2 class="registration-section__title">
             Registration
         </h2>
+
+        <div class="registration-section__position">
+          <div class="registration-section__donut">
+            <picture>
+                <source  srcset="/src/images/registration-donut-bitten-desktop-257.png 1x, /src/images/registration-donut-bitten-desktop-514.png 2x"
+              media="(max-width: 1279px)"/>
+            <source
+              srcset="/src/images/registration-donut-bitten-tablet-220.png 1x, /src/images/registration-donut-bitten-tablet-440.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <img
+                      class="registration-section__picture"
+                       src="/src/images/registration-donut-bitten-tablet-440.png"
+                       alt="bitten donut"
+                     />
+             </picture>
+          
+        </div>
+    
     
     
         <div class="registration">
@@ -30,10 +49,10 @@
     
     
                 <label for="form-phone" class="registration-form__label"></label>
-                <input class="registration-form__input" type="number" name="phone of the person" id="form-phone" placeholder="Phone number" required pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                <input class="registration-form__input" type="tel" name="phone of the person" id="form-phone" placeholder="Phone number" required pattern="\+?[0-9\s\-\(\)]+$">
     
                 <label for="form-email" class="registration-form__label"></label>
-                <input class="registration-form__input" type="email" name="email of the person" id="form-email" placeholder="Email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                <input class="registration-form__input" type="email" name="email of the person" id="form-email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                </div>
 
                <button class="registration-form__button" type="submit">
@@ -41,7 +60,9 @@
             </button>
     
             </form>
-    
-    </div>
+            
+          </div>
+         
+        </div>
       </div>
 </section>
