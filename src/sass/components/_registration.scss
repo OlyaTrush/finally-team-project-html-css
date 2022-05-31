@@ -60,13 +60,14 @@
     @include for-phone-only{
         display: block;
         padding: 32px 6px;
-        max-width: 466px;
+        max-width: 320px;
         height: 100%;
         left: 30px;
         background:$desktop-body-color;
         box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
         border-radius: 150px 150px 0 0; 
         justify-content: center;
+        margin: 0 auto;
     }
 }
 
@@ -127,7 +128,7 @@
     }
 
     @include for-desktop-up{
-       top: 50px;
+       top: 55px;
        left: 705px;
        transform: rotate(4.68deg);
        position: absolute;
