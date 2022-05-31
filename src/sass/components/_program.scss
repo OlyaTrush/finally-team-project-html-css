@@ -10,6 +10,8 @@
 
 .program{
 
+    margin-bottom: 60px;
+
     @media (min-width:769px){
     display: flex;
     flex-direction: column;
@@ -44,7 +46,6 @@
 
     &__list{
         padding: 0;
-        margin-bottom: 60px;
         @media (min-width:769px) and (max-width:1199px){
             max-width: 620px;
             }
@@ -116,8 +117,6 @@
     }
     }
 }
-
-
 
 
 .ponchik-wrap{
