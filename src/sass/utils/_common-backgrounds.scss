@@ -61,11 +61,12 @@
     max-width: 480px;
   }
 
-  background-image: url(/src/images/bottom-common-bg-mob.png);
+  background-image: url('../images/flour-mobile-84.png'),
+  url(/src/images/bottom-common-bg-mob.png);
 
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 1337px;
+  background-position: right bottom, center top;
+  background-size: 84px 73px, 100% 1337px;
 
   // max-width: 320px;
   // height: 1337px;
@@ -78,37 +79,37 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url(/src/images/bottom-common-bg-mob@2x.png);
+      background-image: url('../images/flour-mobile-168.png'), url(/src/images/bottom-common-bg-mob@2x.png);
     }
   }
 
   // @media screen and (min-width: 768px) {}
   @include for-tablet-up {
     width: 768px;
-    background-image: url(/src/images/bottom-common-bg-tablet.png);
-    background-position: center top;
-    background-size: 769px;
+    background-image: url('../images/flour-tablet-184.png'), url(/src/images/bottom-common-bg-tablet.png);
+    background-position: right bottom, center top;
+    background-size: 184px 119px, 769px;
     // height: 1519px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url(/src/images/bottom-common-bg-tablet@2x.png);
+        background-image: url('../images/flour-tablet-368.png'), url(/src/images/bottom-common-bg-tablet@2x.png);
       }
     }
   }
 
   @include for-desktop-up {
     width: 1280px;
-    background-image: url(/src/images/bottom-common-bg-desktop.png);
-    background-position: center top;
-    background-size: 1280px;
+    background-image: url('../images/flour-desktop-302.png'), url(/src/images/bottom-common-bg-desktop.png);
+    background-position: bottom right, center top;
+    background-size: 302px 175px, 1280px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url(/src/images/bottom-common-bg-desktop@2x.png);
+        background-image: url('../images/flour-desktop-604.png'), url(/src/images/bottom-common-bg-desktop@2x.png);
       }
     }
   }
