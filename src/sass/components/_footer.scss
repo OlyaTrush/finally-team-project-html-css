@@ -1,40 +1,8 @@
 .footer {
     padding-top: 32px;
-
-    background-image: url("../images/flour-mobile-84.png");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/flour-mobile-168.png');
-        }
-    
-        @include for-tablet-up {
-            background-image: url("../images/flour-tablet-184.png");
-            background-repeat: no-repeat;
-            background-position: right bottom;
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url('../images/flour-tablet-368.png');
-            }
-        }
-    
-        @include for-desktop-up {
-            background-image: url("../images/flour-desktop-302.png");
-            background-repeat: no-repeat;
-            background-position: right bottom;
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url('../images/flour-desktop-604.png');
-            }
-        }
+    padding-bottom: 20px;
 }
+
 
 
 .address__list {
