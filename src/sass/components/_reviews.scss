@@ -1,5 +1,5 @@
 .reviews{
-    padding-bottom: 32px;
+    padding-bottom: 320px;
       @media screen and (min-width: 320px){
        max-width: 480px;
       }
@@ -20,16 +20,15 @@
     font-size: 24px;
     line-height: 1.25;
     color: $primary-text-color;
-    margin-left: 110px;
+   text-align: center;
     @media screen and (min-width: 768px){
         padding-top: 30px;
-        margin-left: 350px;
-     
+        text-align: center;
         }
          @media screen and (min-width: 1280px){
             padding-top: 60px;
-         margin-left: 600px;
-        font-size: 36px;
+         font-size: 36px;
+         text-align: center;
          }
 }
 
