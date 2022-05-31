@@ -50,7 +50,8 @@
     }
 
     &__wrapper {
-        width: 279px;
+        min-width: 279px;
+       
 
         @include for-tablet-only {
             width: 336px;
@@ -83,11 +84,13 @@
 
     @include for-tablet-only {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
     @include for-desktop-up{
         display:flex;
         justify-content: space-evenly;
+        align-items: center;
     }
 
     
