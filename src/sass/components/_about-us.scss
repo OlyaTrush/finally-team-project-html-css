@@ -59,6 +59,7 @@
             @include for-desktop-up {
             width: 392px;
             padding-top: 10px;
+            margin-top: 20px;
         }
         
     }
@@ -86,6 +87,7 @@
     }
     @include for-desktop-up{
         display:flex;
+        justify-content: space-evenly;
     }
 
     
