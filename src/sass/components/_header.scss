@@ -13,14 +13,24 @@ a {
   text-decoration: none;
 }
 
+.header {
+  @include for-phone-only {
+    min-height: 60px;
+  }
+
+  @include for-tablet-only {
+    min-height: 80px;
+  }
+}
+
 .header__container {
-  @media screen and (max-width: 299px) {
+  @media screen and (max-width: 319px) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @include for-phone-only {
-    max-width: 480px;
+  @include for-tablet-only {
+    width: 768px;
   }
 
   @include for-tablet-up {
@@ -28,51 +38,6 @@ a {
   }
 
   position: relative;
-}
-
-.header__img {
-  position: absolute;
-
-  &--mobile {
-    top: 0;
-    left: 0;
-
-    width: 37%;
-  }
-
-  &--tablet {
-    display: none;
-
-    top: 0;
-    left: 289px;
-  }
-
-  &--desktop {
-    display: none;
-
-    top: 0;
-    right: 0;
-  }
-
-  @include for-tablet-up {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
-
-  @include for-desktop-up {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
 }
 
 .logo {
@@ -96,6 +61,8 @@ a {
 }
 
 .nav {
+  z-index: 1;
+
   @include for-phone-only {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -112,7 +79,7 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background: $menu-background-color;
+    background-color: $menu-background-color;
     backdrop-filter: blur(4px);
 
     overflow-y: scroll;
@@ -138,7 +105,7 @@ a {
 
       display: block;
 
-      width: 769px;
+      width: 768px;
     }
   }
 
@@ -161,6 +128,8 @@ a {
 
   border: none;
   background-color: inherit;
+
+  transition: color 250ms $timing-function;
 
   @include for-tablet-only {
     padding-top: 32px;
@@ -191,9 +160,18 @@ a {
   }
 }
 
+.nav__menu-btn:hover,
+.nav__menu-btn:focus {
+  color: $accent-color;
+
+  cursor: pointer;
+}
+
 .nav__menu-icon {
   width: 30px;
   height: 16px;
+
+  fill: currentColor;
 
   .nav__menu-btn.is-open & {
     width: 18px;
@@ -232,8 +210,6 @@ a {
     margin-left: 162px;
 
     display: flex;
-
-    z-index: 1;
   }
 }
 
@@ -261,6 +237,8 @@ a {
   line-height: 1.21;
 
   color: $primary-text-color;
+
+  transition: color 250ms $timing-function;
 
   @include for-desktop-up {
     padding-top: 58px;
