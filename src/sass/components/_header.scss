@@ -29,12 +29,9 @@ a {
     padding-right: 20px;
   }
 
-  @include for-tablet-only {
-    width: 768px;
-  }
-
-  @include for-tablet-up {
-    max-width: none;
+  @include for-desktop-up {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   position: relative;
@@ -128,6 +125,7 @@ a {
 
   border: none;
   background-color: inherit;
+  color: $primary-text-color;
 
   transition: color 250ms $timing-function;
 
