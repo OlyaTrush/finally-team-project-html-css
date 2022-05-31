@@ -1,5 +1,10 @@
 .reviews{
+<<<<<<< Updated upstream
     padding-bottom: 320px;
+=======
+    padding-bottom: 32px;
+    display: flex;
+>>>>>>> Stashed changes
       @media screen and (min-width: 320px){
        max-width: 480px;
       }
@@ -20,6 +25,7 @@
     font-size: 24px;
     line-height: 1.25;
     color: $primary-text-color;
+<<<<<<< Updated upstream
    text-align: center;
     @media screen and (min-width: 768px){
         padding-top: 30px;
@@ -29,6 +35,16 @@
             padding-top: 60px;
          font-size: 36px;
          text-align: center;
+=======
+  text-align: center;
+    @media screen and (min-width: 768px){
+        text-align: center;
+     
+        }
+         @media screen and (min-width: 1280px){
+            text-align: center;
+        font-size: 36px;
+>>>>>>> Stashed changes
          }
 }
 
@@ -59,22 +75,39 @@
     }
            
 @media screen and (min-width: 1280px){
+<<<<<<< Updated upstream
     top: 6px;
   left: 100px;
+=======
+    top: 100px;
+  left: 0px;
+  width: 285px;
+>>>>>>> Stashed changes
   }
 }
 
 .reviews-list__item2{
+    margin-top: 36px;
     @media screen and (min-width: 768px){
     width: 336px;
     position: absolute;
     left: 200px;
+<<<<<<< Updated upstream
     top: 70px;
   }
   @media screen and (min-width: 1280px){
     top: 219px;
     left: 420px;
+=======
+    top: 100px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1280px){
+    top: 279px;
+    left: 320px;
+>>>>>>> Stashed changes
     width: 394px;
+    margin-top: 0;
   }
 }
 
@@ -89,9 +122,15 @@
        
     }
     @media screen and (min-width: 1280px){
+<<<<<<< Updated upstream
         top: 46px;
         left: 850px;
       width: 288px;
+=======
+        top: 136px;
+        left: 750px;
+        width: 288px;
+>>>>>>> Stashed changes
       }
 }
 
@@ -220,14 +259,18 @@
         padding-right: 70px;
     }
     @media screen and (min-width: 1280px){
+<<<<<<< Updated upstream
         margin-top: 720px;
+=======
+        margin-top: 770px;
+>>>>>>> Stashed changes
         margin-left: 0;
         font-size: 18px;
         line-height: 1.21;
         width: 1248px;
         height: 88px;
-        padding-right: 180px;
-        padding-left: 180px;
+        padding-right: 220px;
+     
          }
     }
 
@@ -244,7 +287,11 @@
         margin-left: 350px;
     }
     @media screen and (min-width: 1280px){
+<<<<<<< Updated upstream
 margin-left: 620px;
 
+=======
+margin-left: 520px;
+>>>>>>> Stashed changes
     }
     }
