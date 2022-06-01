@@ -1,18 +1,18 @@
 .hero {
-  margin-top: 30px;
-  margin-bottom: 5px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 
   @include for-phone-only {
     text-align: center;
   }
 
   @include for-tablet-only {
-    margin-top: 15px;
-    margin-bottom: 69px;
+    padding-top: 15px;
+    padding-bottom: 69px;
   }
 
   @include for-desktop-up {
-    margin-bottom: 111px;
+    padding-bottom: 111px;
   }
 }
 
