@@ -225,7 +225,7 @@ a {
   }
 
   @include for-desktop-up {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 
@@ -234,6 +234,8 @@ a {
 }
 
 .pages__link {
+  position: relative;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 1.21;
@@ -252,11 +254,83 @@ a {
     font-size: 18px;
     line-height: 1.22;
   }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    z-index: 1;
+
+    width: 0px;
+    height: 0px;
+
+    display: inline-block;
+
+    opacity: 0;
+
+    border-top: 2px dotted black;
+    border-left: 2px dotted black;
+
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+
+    @media screen and (min-width: 1280px) {
+      top: 52px;
+    }
+  }
+
+  &--chips::before {
+    background-image: url('../images/program-donut-chips-mobile-79.png');
+  }
+
+  &--chocolate::before {
+    background-image: url('../images/program-donut-chocolate-mobile-74.png');
+  }
+
+  &--stripes::before {
+    background-image: url('../images/program-donut-stripes-mobile-77.png');
+  }
+  &--white::before {
+    background-image: url('../images/program-donut-white-mobile-75.png');
+  }
 }
 
 .pages__link:hover,
 .pages__link:focus {
   color: $accent-color;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -17px;
+    left: -20px;
+    z-index: 2;
+
+    width: 24px;
+    height: 24px;
+
+    display: inline-block;
+
+    background-size: contain;
+
+    @media screen and (min-width: 1280px) {
+      top: 40px;
+    }
+  }
+
+  &::after {
+    width: 120px;
+    height: 35px;
+
+    opacity: 1;
+
+    @media screen and (min-width: 1280px) {
+      width: 100px;
+      height: 30px;
+    }
+  }
 }
 
 .scroll-up {
