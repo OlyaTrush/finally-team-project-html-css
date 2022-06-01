@@ -105,6 +105,12 @@
     line-height: 2.3;
     text-align: center;
     color: $button-text-color;
+        transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+    }
     @include for-desktop-up {
         display: flex;
         align-items: center;
