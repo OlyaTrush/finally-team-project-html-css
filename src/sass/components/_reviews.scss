@@ -1,14 +1,13 @@
 .reviews {
   padding-bottom: 32px;
-  height: 100%;
+ 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 
-  //   @media screen and (min-width: 768px) {
-  //     width: 768px;
-  //   }
-
-  //   @media screen and (min-width: 1280px) {
-  //     width: 1280px;
-  //   }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+  }
 }
 
 .reviews__title {
@@ -30,6 +29,19 @@
 
 .reviews__item {
   margin-bottom: 32px;
+
+  &.swiper-slide-active {
+  @media screen and (min-width: 768px) {
+    transform: scale(1) translate(0px, 40px);
+    transition: 0.8s;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    transform: scale(1.1) translate(0px, 120px);
+    margin-bottom: 170px;
+  }
+}
 }
 
 // picture
@@ -40,12 +52,22 @@
   width: 280px;
 
   @media screen and (min-width: 768px) {
-    width: 336px;
+    width: 152px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 394px;
+    width: 288px;
   }
+}
+
+.swiper-slide-active .reviews__picture {
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  };
+
+  @media screen and (min-width: 1200px) {
+    width: 394px;
+  };
 }
 
 // icon
@@ -63,13 +85,17 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 8px;
-
+  
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   color: $primary-text-color;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  };
 }
 
 .reviews__text {
@@ -77,7 +103,7 @@
   margin-left: auto;
 
   width: 280px;
-
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -88,6 +114,18 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 160px;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper-slide-active .reviews__text {
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 .swiper-pagination {
@@ -97,5 +135,5 @@
   font-size: 14px;
   line-height: 1.214;
   text-align: center;
-  color: #ab816c;
+  color: #AB816C;
 }
