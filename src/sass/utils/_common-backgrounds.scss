@@ -60,7 +60,7 @@
   margin-right: auto;
 
   @include for-phone-only {
-    max-width: 480px;
+    // max-width: 480px;
   }
 
   background-image: url('../images/flour-mobile-84.png'),
@@ -68,7 +68,7 @@
 
   background-repeat: no-repeat;
   background-position: right bottom, center top;
-  background-size: 84px 73px, 100% 1337px;
+  background-size: 84px 73px, 100% 100%;
 
   // max-width: 320px;
   // height: 1337px;
@@ -88,11 +88,11 @@
 
   // @media screen and (min-width: 768px) {}
   @include for-tablet-up {
-    width: 768px;
+    // width: 768px;
     background-image: url('../images/flour-tablet-184.png'),
       url(/src/images/bottom-common-bg-tablet.png);
     background-position: right bottom, center top;
-    background-size: 184px 119px, 769px;
+    background-size: 184px 119px, 100% 100%;
     // height: 1519px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -106,11 +106,13 @@
   }
 
   @include for-desktop-up {
-    width: 1280px;
+    // width: 1280px;
     background-image: url('../images/flour-desktop-302.png'),
       url(/src/images/bottom-common-bg-desktop.png);
     background-position: bottom right, center top;
-    background-size: 302px 175px, 1280px;
+    // background-size: 302px 175px, 1700px 1590px;
+    background-size: 302px 175px, 100% 100%;
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
