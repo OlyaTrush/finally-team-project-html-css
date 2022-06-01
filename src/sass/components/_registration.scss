@@ -299,6 +299,13 @@
         border: none;
         padding: 8px 46px 9px 47px;
         cursor: pointer;
+
+        transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
+         &:hover,
+         &:focus {
+        background-color: $accent-color;
+        box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+    }
         
 
         @include for-phone-only{
