@@ -3,29 +3,28 @@
     <h2 class="registration-section__title">Registration</h2>
 
     <div class="registration-section__position">
-      <div class="registration-section__donut">
-        <picture>
-          <source
-            srcset="
-              /src/images/registration-donut-bitten-desktop-257.png 1x,
-              /src/images/registration-donut-bitten-desktop-514.png 2x
-            "
-            media="(max-width: 1279px)"
-          />
-          <source
-            srcset="
-              /src/images/registration-donut-bitten-tablet-220.png 1x,
-              /src/images/registration-donut-bitten-tablet-440.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <img
-            class="registration-section__picture"
-            src="/src/images/registration-donut-bitten-tablet-440.png"
-            alt="bitten donut"
-          />
-        </picture>
-      </div>
+
+      <img
+          class="registration__donut--tablet"
+          srcset="/src/images/registration-donut-bitten-tablet-220.png 220w,
+          /src/images/registration-donut-bitten-tablet-440.png 440w
+          "
+          sizes="(min-width: 768px) 220px"
+          src="/src/images/registration-donut-bitten-tablet-220.png "
+          alt="bitten donut"
+        />
+
+        <img
+          class="registration__donut--desktop"
+          srcset="
+          /src/images/registration-donut-bitten-desktop-257.png 257w,
+          /src/images/registration-donut-bitten-desktop-514.png 514w
+          "
+          sizes="(min-width: 1280px) 257px"
+          src="/src/images/registration-donut-bitten-desktop-257.png"
+          alt=" bitten donut"
+        />
+
 
       <div class="registration">
         <div class="registraction-info">
@@ -83,7 +82,7 @@
         </form>
       </div>
 
-      <div>
+
         <img
           class="registration__confetti--tablet"
           srcset="
@@ -105,7 +104,7 @@
           src="/src/images/confetti-desktop-1x.png"
           alt=" birthday confetti"
         />
-      </div>
+
     </div>
   </div>
 </section>
