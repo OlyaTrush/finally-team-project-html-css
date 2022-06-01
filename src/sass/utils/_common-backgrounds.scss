@@ -1,11 +1,4 @@
 .top-common-background {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include for-phone-only {
-    max-width: 480px;
-  }
-
   background-image: url('../images/header-donuts-mobile-120.png'),
     url('../images/top-common-bg-mob.png');
 
@@ -21,12 +14,10 @@
   }
 
   @include for-tablet-up {
-    width: 768px;
-
     background-image: url('../images/header-donuts-tablet-380.png'),
       url('../images/top-common-bg-tablet.png');
-    background-position: 289px top, center top;
-    background-size: 380px, 769px;
+    background-position: right 38% top, center top;
+    background-size: 378px, 100% 622px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -37,13 +28,11 @@
   }
 
   @include for-desktop-up {
-    width: 1280px;
-
     background-image: url('../images/spoon-desktop-145.png'),
       url('../images/header-donuts-desktop-716.png'),
       url('../images/top-common-bg-desktop.png');
     background-position: left 501px, right top, center top;
-    background-size: 145px, 716px, 1280px;
+    background-size: 145px, 716px, 100% 1035px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
