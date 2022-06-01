@@ -1,5 +1,5 @@
 .program-section{
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .program-wrap{
@@ -70,6 +70,7 @@
     letter-spacing: 0em;
     text-align: left;
     gap: 8px;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
     @media (min-width: 1279px){
@@ -77,6 +78,10 @@
         line-height: 1.1;
     }
     }
+    &__link:hover,
+    &__link:focus{
+    transform: scale(1.2 , 1.2);
+}
 
     &__link-hidden{
         display: none;
@@ -87,6 +92,7 @@
     letter-spacing: 0em;
     text-align: left;
     gap: 8px;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: 1279px){
         display: block;
@@ -94,6 +100,11 @@
     line-height: 1.1;
     }
     }
+
+    &__link-hidden:hover,
+    &__link-hidden:focus{
+    transform: scale(1.2 , 1.2);
+}
     
     &__link:not(:last-child){
         margin-bottom: 8px;
@@ -127,23 +138,15 @@
     }
 }
 
-
-.ponchik-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .ponchik{
 display: flex;
 flex-wrap: wrap;
-gap: 30px;
+gap: 0px;
 justify-content: center;
 
-
-@media (min-width:320px){
-    padding: 0;
+@media (min-width:420px){
+    display: flex;
+    gap: 30px;
 }
 
 @media (min-width:769px){
@@ -154,7 +157,6 @@ justify-content: center;
     display: flex;
     justify-content: flex-end;
 }
-
 
 
 &__item{
@@ -170,6 +172,10 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
+position: relative;
+
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 @media (min-width:769px) and (max-width:1199px){
     display: flex;
     margin-bottom: 40px;
@@ -183,12 +189,19 @@ justify-content: center;
     height: 180px;
     margin-right: 100px;
 }
+}
 
-
+&__item:hover,
+&__item:focus{
+    transform: scale(1.2 , 1.2);
 }
 
 &__item:nth-of-type(2){
     margin-top: 57px;
+
+    @media (min-width:320px){  
+    margin-right: 0;
+    }
 
     @media (min-width:769px){
     margin-top: 45px;
@@ -200,6 +213,10 @@ justify-content: center;
 
 &__item:nth-of-type(4){
     margin-top: 57px;
+
+    @media (min-width:320px){  
+        margin-right: 0;
+        }
     
     @media (min-width:769px){
         margin-top: 45px;
@@ -210,9 +227,27 @@ justify-content: center;
 
 &__img{
     display: block;
+    position: absolute;
+    top: -30%;
+    left: 25%;
+
+    @media (min-width:320px) and (max-width:768px){
+        position: absolute;
+        top: -40%;
+        left: 20%;
+    }
+
+    @media (min-width:768px){
+        position: absolute;
+    top: -30%;
+    left: 26%;
+    }
     @media (min-width:1279px){
         height: 107px;
         width: 97px;
+        position: absolute;
+    top: -29%;
+    left: 25%;
     }
 }
 
@@ -253,7 +288,7 @@ margin-bottom: 8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
 }
 }
