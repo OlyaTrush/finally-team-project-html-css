@@ -1,6 +1,13 @@
 .footer {
     padding-top: 32px;
     padding-bottom: 20px;
+    position: relative;
+}
+
+.address {
+    @include for-desktop-up {
+        margin-right: 198px;
+    }
 }
 
 
@@ -25,6 +32,12 @@
 
     font-style: normal;
     color: $primary-text-color;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .address__icon {
@@ -33,4 +46,34 @@
     height: 14px;
     fill: currentColor;
     margin-right: 4px;
+}
+.address__map {
+
+    position: absolute;
+    top: -115px;
+    left: 68%;
+
+    width: 300px;
+    padding: 5px;
+    background-color: $desktop-body-color;
+    border-radius: 10px;
+    box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms $timing-function 150ms;
+
+}
+.address__link:hover .address__map {
+    @include for-desktop-up {
+        opacity: 1;
+        pointer-events: all;
+    } 
+}
+.address__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    border-radius: 10px;
+
 }
