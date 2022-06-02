@@ -27,6 +27,7 @@
         }
 
         @include for-desktop-up{
+            font-size:36px;
             height: 65px;
             margin-bottom: 16px;
         }
