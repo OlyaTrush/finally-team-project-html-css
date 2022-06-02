@@ -76,7 +76,7 @@
             />
           </div>
 
-          <button class="registration-form__button" type="submit">
+          <button class="registration-form__button" data-modal-open type="submit" >
             Register
           </button>
         </form>
@@ -106,4 +106,17 @@
 
     </div>
   </div>
-</section>
+
+  <div class="modal is-hidden" data-modal>
+    <div class="modal__inner">
+        <h3 class="modal__title">Thank you!</h3>
+        <p class="modal__text">Now you are a member of our list of wonderful people! We will write you an email to confirm your order</p>
+        <picture class="modal__img">
+            <source srcset="./images/program-donut-chocolate-mobile-74.png 1x, ./images/program-donut-chocolate-mobile-148.png 2x" media="(max-width: 767px)" />
+            <source srcset="./images/program-donut-chocolate-tablet-71.png 1x, ./images/program-donut-chocolate-tablet-141.png 2x" media="(max-width: 1199px)" />
+            <source srcset="./images/program-donut-chocolate-desktop-83.png 1x, ./images/program-donut-chocolate-desktop-166.png 2x" media="(min-width: 1200px)" />
+            <img  src="./images/program-donut-chocolate-mobile-74.png" alt="donut-four" data-modal-close> 
+        </picture>
+    </div> 
+</div>
+<script src="./js/modal.js"></script>
