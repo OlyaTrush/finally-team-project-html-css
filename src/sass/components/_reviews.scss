@@ -3,10 +3,12 @@
  
   @media screen and (min-width: 768px) {
     width: 100%;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 100%;
+    padding-bottom: 60px;
   }
 }
 
@@ -27,7 +29,7 @@
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    height: 450px;
+    height: 460px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -43,12 +45,10 @@
     position: relative;
     transform: scale(1) translate(0px, 40px);
     transition: 0.8s;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1280px) {
     transform: scale(1.1) translate(0px, 120px);
-    margin-bottom: 170px;
   }
 }
 }
@@ -135,7 +135,6 @@
     left: -135px;
     display: block;
     width: 500px;
-    text-align: justify;
   }
 
   @media screen and (min-width: 1280px) {
