@@ -1,129 +1,123 @@
-.program-section{
-    padding-top: 40px;
+.program-section {
+  padding-top: 40px;
 }
 
-.program-wrap{
-    @media (min-width:769px){
-        display: flex;
-    }
+.program-wrap {
+  @include for-tablet-up {
+    display: flex;
+  }
 
-    @media (min-width:1279px){
-        display: flex;
-    }
+  @include for-desktop-up {
+    display: flex;
+  }
 }
 
+.program {
+  margin-bottom: 60px;
 
-.program{
-
-    margin-bottom: 60px;
-
-    @media (min-width:769px){
+  @include for-tablet-up {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
-        }
+  }
 
-    @media (min-width:1279px){
+  @include for-desktop-up {
     display: flex;
     flex-direction: column;
     // margin-right: 140px;
-        }
+  }
 
-    &__title{
-        font-family: 'Caveat Brush' , sans-serif ;
+  &__title {
+    font-family: 'Caveat Brush', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0em;
     text-align: center;
-    
+
     margin-bottom: 8px;
 
-    @media (min-width:769px){
-        text-align: start;
-        }
-
-    @media (min-width:1279px){
-        font-size: 36px;
-        line-height: 65px;
-    }
+    @include for-tablet-up {
+      text-align: start;
     }
 
-    &__list{
-        padding: 0;
-        @media (min-width:769px) and (max-width:1279px){
-            max-width: 620px;
-            }
-
-        @media (min-width:1279px){
-        max-width: 540px;
-        }
-    
-
+    @include for-desktop-up {
+      font-size: 36px;
+      line-height: 65px;
     }
-    
-    &__link{
-        font-family: 'Montserrat' , sans-serif;
+  }
+
+  &__list {
+    padding: 0;
+    @include for-tablet-only {
+      max-width: 620px;
+    }
+
+    @include for-desktop-up {
+      max-width: 540px;
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0em;
     text-align: left;
     gap: 8px;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    @media (min-width: 1279px){
-        font-size: 18px;
-        line-height: 1.1;
+    @include for-desktop-up {
+      font-size: 18px;
+      line-height: 1.1;
     }
-    }
-    &__link:hover,
-    &__link:focus{
-    transform: scale(1.2 , 1.2);
-}
+  }
+  &__link:hover,
+  &__link:focus {
+    transform: scale(1.2, 1.2);
+  }
 
-    &__link-hidden{
-        display: none;
-        font-family: 'Montserrat' , sans-serif;
+  &__link-hidden {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0em;
     text-align: left;
     gap: 8px;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (min-width: 1279px){
-        display: block;
-        font-size: 18px;
-    line-height: 1.1;
+    @include for-desktop-up {
+      display: block;
+      font-size: 18px;
+      line-height: 1.1;
     }
+  }
+
+  &__link-hidden:hover,
+  &__link-hidden:focus {
+    transform: scale(1.2, 1.2);
+  }
+
+  &__link:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include for-desktop-up {
+      margin-bottom: 16px;
     }
+  }
 
-    &__link-hidden:hover,
-    &__link-hidden:focus{
-    transform: scale(1.2 , 1.2);
-}
-    
-    &__link:not(:last-child){
-        margin-bottom: 8px;
-
-        @media (min-width: 1279px){
-            margin-bottom: 16px;
-        }
-
-    }
-
-    &__button{
-        display: block;
-        font-family: 'Caveat Brush';
+  &__button {
+    display: block;
+    font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2777;
     text-align: left;
-    color: #AB816C;
+    color: #ab816c;
     padding: 0px;
 
     margin-top: 16px;
@@ -131,164 +125,156 @@
     border: none;
     background-color: transparent;
 
-
-    @media (min-width:1279px){
-        display: none;
+    @include for-desktop-up {
+      display: none;
     }
-    }
+  }
 }
 
-.ponchik{
-display: flex;
-flex-wrap: wrap;
-gap: 0px;
-justify-content: center;
+.ponchik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center;
 
-@media (min-width:420px){
+  @media (min-width: 420px) {
     display: flex;
     gap: 30px;
-}
+  }
 
-@media (min-width:769px){
+  @include for-tablet-up {
     display: flex;
     gap: 30px;
-}
-@media (min-width:1279px){
+  }
+  @include for-desktop-up {
     display: flex;
     justify-content: flex-end;
-}
+  }
 
-
-&__item{
+  &__item {
     display: flex;
-    background: #FEF3E4;
-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-width: 130px;
-height: 130px;
-margin-bottom: 20px;
-margin-right: 20px;
-border-radius: 50%;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    background: #fef3e4;
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-position: relative;
+    position: relative;
 
-transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media (min-width:769px) and (max-width:1199px){
-    display: flex;
-    margin-bottom: 40px;
-    width: 152px;
-    height: 152px;
-    margin-right: 30px;
-}
-
-@media (min-width:1279px){
-    width: 180px;
-    height: 180px;
-    margin-right: 100px;
-}
-}
-
-&__item:hover,
-&__item:focus{
-    transform: scale(1.2 , 1.2);
-}
-
-&__item:nth-of-type(2){
-    margin-top: 57px;
-
-    @media (min-width:320px){  
-    margin-right: 0;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      margin-bottom: 40px;
+      width: 152px;
+      height: 152px;
+      margin-right: 30px;
     }
 
-    @media (min-width:769px){
-    margin-top: 45px;
-    margin-right: 0;}
+    @include for-desktop-up {
+      width: 180px;
+      height: 180px;
+      margin-right: 100px;
+    }
+  }
 
-}
+  &__item:hover,
+  &__item:focus {
+    transform: scale(1.2, 1.2);
+  }
 
-
-
-&__item:nth-of-type(4){
+  &__item:nth-of-type(2) {
     margin-top: 57px;
 
-    @media (min-width:320px){  
-        margin-right: 0;
-        }
-    
-    @media (min-width:769px){
-        margin-top: 45px;
-        margin-right: 0;
+    @media (min-width: 320px) {
+      margin-right: 0;
     }
-}
 
+    @include for-tablet-up {
+      margin-top: 45px;
+      margin-right: 0;
+    }
+  }
 
-&__img{
+  &__item:nth-of-type(4) {
+    margin-top: 57px;
+
+    @media (min-width: 320px) {
+      margin-right: 0;
+    }
+
+    @include for-tablet-up {
+      margin-top: 45px;
+      margin-right: 0;
+    }
+  }
+
+  &__img {
     display: block;
     position: absolute;
     top: -30%;
     left: 25%;
 
-    @media (min-width:320px) and (max-width:768px){
-        position: absolute;
-        top: -40%;
-        left: 20%;
+    @media (min-width: 320px) and (max-width: 767.9px) {
+      position: absolute;
+      top: -40%;
+      left: 20%;
     }
 
-    @media (min-width:768px){
-        position: absolute;
-    top: -30%;
-    left: 26%;
+    @include for-tablet-up {
+      position: absolute;
+      top: -30%;
+      left: 26%;
     }
-    @media (min-width:1279px){
-        height: 107px;
-        width: 97px;
-        position: absolute;
-    top: -29%;
-    left: 25%;
+    @include for-desktop-up {
+      height: 107px;
+      width: 97px;
+      position: absolute;
+      top: -29%;
+      left: 25%;
     }
-}
+  }
 
-&__title{
+  &__title {
     font-family: 'Caveat Brush';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.27777;
-text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.27777;
+    text-align: center;
 
-margin-bottom: 4.5px;
+    margin-bottom: 4.5px;
 
-@media (min-width:1279px){
-    font-size: 24px;
-    line-height: 30px;
-}
-}
-&__link{
+    @include for-desktop-up {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  &__link {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.214;
-text-align: center;
-margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.214;
+    text-align: center;
+    margin-bottom: 8px;
 
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
 
-@media (min-width:1279px){
-    font-size: 16px;
-    line-height: 20px;
-}
-
-}
-
-&__wrap{
+  &__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     // margin-bottom: 60px;
-
-}
+  }
 }
