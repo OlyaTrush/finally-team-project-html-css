@@ -28,7 +28,7 @@ a {
 }
 
 .header__container {
-  @media screen and (max-width: 319px) {
+  @media screen and (max-width: 319.9px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -88,7 +88,7 @@ a {
 }
 
 .nav__container {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.9px) {
     position: relative;
   }
 
