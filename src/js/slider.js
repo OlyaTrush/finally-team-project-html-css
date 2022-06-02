@@ -11,6 +11,11 @@ var swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
