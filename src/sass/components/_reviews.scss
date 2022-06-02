@@ -162,3 +162,17 @@
   text-align: center;
   color: #AB816C;
 }
+
+.swiper-pagination::after {
+  content: '____';
+  margin-left: 12px;
+  color:#AB816C;
+  vertical-align: super;
+}
+
+.swiper-pagination::before {
+  content: '____';
+  margin-right: 12px;
+  color:#AB816C;
+  vertical-align: super;
+}
