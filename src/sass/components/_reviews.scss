@@ -25,6 +25,14 @@
 // list
 .reviews__list {
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    height: 655px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 837px;
+  }
 }
 
 .reviews__item {
@@ -32,6 +40,7 @@
 
   &.swiper-slide-active {
   @media screen and (min-width: 768px) {
+    position: relative;
     transform: scale(1) translate(0px, 40px);
     transition: 0.8s;
     margin-bottom: 60px;
@@ -122,9 +131,16 @@
 
 .swiper-slide-active .reviews__text {
   @media screen and (min-width: 768px) {
+    position: absolute;
+    left: -135px;
     display: block;
-    width: 100%;
+    width: 500px;
     text-align: justify;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+    left: -175px;
   }
 }
 
