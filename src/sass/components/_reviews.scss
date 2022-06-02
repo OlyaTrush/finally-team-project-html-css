@@ -148,8 +148,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 700px;
-    left: -175px;
+    width: 887px;
+    left: -282px;
   }
 }
 
@@ -161,4 +161,18 @@
   line-height: 1.214;
   text-align: center;
   color: #AB816C;
+}
+
+.swiper-pagination::after {
+  content: '____';
+  margin-left: 12px;
+  color:#AB816C;
+  vertical-align: super;
+}
+
+.swiper-pagination::before {
+  content: '____';
+  margin-right: 12px;
+  color:#AB816C;
+  vertical-align: super;
 }
