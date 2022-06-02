@@ -2,8 +2,8 @@
   var scrollUp = document.querySelector('.scroll-up');
 
   window.addEventListener('scroll', trackScroll);
-  scrollUp.addEventListener('click', backToTop);
-  scrollUp.addEventListener('touchstart', backToTop);
+  scrollUp.addEventListener('click', trackScroll);
+  scrollUp.addEventListener('touchstart', trackScroll);
 
   function trackScroll() {
     var scrolled = window.pageYOffset;
