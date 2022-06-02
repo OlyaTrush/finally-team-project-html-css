@@ -3,9 +3,6 @@
     align-items: center;
     position: relative;
 
-
-
-     
     &__title{
         font-family: 'Caveat Brush';
         font-style: normal;
@@ -27,32 +24,13 @@
         }
 
         @include for-desktop-up{
+            font-size:36px;
             height: 65px;
             margin-bottom: 16px;
         }
     }
 
-    &__donut{
-        z-index: 10;
-        position: absolute;
 
-        @include for-phone-only{
-            display: none;
-        }
-    
-        @include for-tablet-only {
-          
-            top: -35px;
-            left: -22px;
-         
-        }
-    
-        @include for-desktop-up{
-            top: -1px;
-            left: 120px;
-            transform: rotate(-8deg);
-        }
-    }
 }
 
 
@@ -101,16 +79,57 @@
     margin: 0 auto;
   }
 
+
+  &__donut--tablet{
+    @include for-phone-only{
+        display: none;
+    }
+
+    @include for-tablet-only {
+          
+        top: 0;
+        left: 0;
+        width: 196px;
+        z-index: 10;
+        position: absolute;
+     
+    }
+
+    @include for-desktop-up{
+        display: none;
+    }
+  }
+
+
+  &__donut--desktop{
+    @include for-phone-only{
+        display: none;
+    }
+    @include for-tablet-only{
+        display: none;
+    }
+
+    @include for-desktop-up{
+        z-index: 10;
+        position: absolute;
+        top: -1px;
+        left: 85px;
+       
+    }
+    }
+  
+
+
+
   &__confetti--tablet{
     @include for-phone-only{
         display: none;
     }
 
     @include for-tablet-up{
-        height: 345.35px;
-        left: 504px;
         position: absolute;
-        top: 113px;
+        top: 100px;
+        right: 0;
     }
 
     @include for-desktop-up{
@@ -129,7 +148,7 @@
 
     @include for-desktop-up{
        top: 55px;
-       left: 705px;
+       right: 0;
        transform: rotate(4.68deg);
        position: absolute;
 }
@@ -139,10 +158,12 @@
 
 
 
+
 .registraction-info{
 
   @include for-phone-only{
       border-bottom: 1px solid $placeholder-color;
+      padding-bottom: 20px;
   }
     @include for-tablet-up{
         border-right: 1px solid $placeholder-color;
@@ -187,7 +208,6 @@
         text-align: center;
 
         @include for-phone-only{
-       margin-bottom: 20px;
        margin-top: 20px;
         }   
         
@@ -299,6 +319,13 @@
         border: none;
         padding: 8px 46px 9px 47px;
         cursor: pointer;
+
+        transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function;
+         &:hover,
+         &:focus {
+        background-color: $accent-color;
+        box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+    }
         
 
         @include for-phone-only{
