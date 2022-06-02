@@ -50,18 +50,32 @@
 .address__map {
 
     position: absolute;
-    top: -115px;
-    left: 68%;
+    
 
-    width: 300px;
-    padding: 5px;
-    background-color: $desktop-body-color;
-    border-radius: 10px;
-    box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+    @media screen and (max-width: 1279px) {
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms $timing-function 150ms;
+        top: -115px;
+        left: 68%;
+
+        width: 300px;
+        padding: 5px;
+        background-color: $desktop-body-color;
+        border-radius: 10px;
+        box-shadow: -4px -4px 4px $box-shadow-color, 4px 4px 4px $box-shadow-color;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 250ms $timing-function 150ms;
 
 }
 .address__link:hover .address__map,
